@@ -16,6 +16,7 @@ public class DecomposeConditional {
 			  this.winterServiceCharge = service;
 		  }
 		  
+		  
 		  public boolean isWinter(Date date) {
 			  if(date.before(SUMMER_START) || date.after(SUMMER_END)) {
 				  return true;
