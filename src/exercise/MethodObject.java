@@ -14,7 +14,7 @@ public class MethodObject {
         }
     }
 
-    
+  //tes
     class GammaCalculator {
         private final Account account;
         private final int inputVal;

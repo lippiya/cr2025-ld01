@@ -23,6 +23,7 @@ public class DecomposeConditional {
 			  }
 			  return false;
 		  }
+		  //tes
 		  
 		  public double winterPrice(int quantity) {
 			  return quantity * winterRate + winterServiceCharge;

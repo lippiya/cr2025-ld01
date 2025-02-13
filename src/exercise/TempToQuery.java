@@ -25,7 +25,7 @@ public class TempToQuery {
             return getBasePrice() > 1000 ? 0.95 : 0.98;
         }
     }
-
+  //tes
     public void Test() {
         Product p1 = new Product(100, 200);
         Product p2 = new Product(10, 50);

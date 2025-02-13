@@ -21,6 +21,7 @@ public class ExtractSubClass {
 	        }
 	    }
 
+	//tes
 	    
 	    class PartsItem extends JobItem {
 	        private int unitPrice;

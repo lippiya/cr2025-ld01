@@ -23,6 +23,7 @@ public class ExtractMethod {
 	  double outstanding = 0.0;
 
 	  // print banner
+	//tes
 	  printBanner();
 
 	  // print owings

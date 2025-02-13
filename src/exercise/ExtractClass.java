@@ -20,6 +20,7 @@ public class ExtractClass {
 			  public void setOfficeNumber(String arg) {
 				officeNumber = arg;
 			  }
+			//tes
 	}
 	
 	class Person {
