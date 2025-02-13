@@ -23,9 +23,7 @@ public class ExtractMethod {
 	  double outstanding = 0.0;
 
 	  // print banner
-	  System.out.println ("*****************************");
-	  System.out.println ("****** Customer totals ******");
-	  System.out.println ("*****************************");
+	  printBanner();
 
 	  // print owings
 	  while (elements.hasMoreElements()) {
@@ -34,8 +32,16 @@ public class ExtractMethod {
 	  }
 
 	  // print details
-	  System.out.println("name: " + name);
-	  System.out.println("amount: " + outstanding);
+	  printDetails(outstanding);
+	}
+	public void printDetails(double outstanding) {
+		System.out.println("name: " + name);
+		  System.out.println("amount: " + outstanding);
+	}
+	public void printBanner() {
+		System.out.println ("*****************************");
+		  System.out.println ("****** Customer totals ******");
+		  System.out.println ("*****************************");
 	}
 	
 	class Order implements Enumeration {
