@@ -16,17 +16,34 @@ public class DecomposeConditional {
 			  this.winterServiceCharge = service;
 		  }
 		  
+		  
+		  public boolean isWinter(Date date) {
+			  if(date.before(SUMMER_START) || date.after(SUMMER_END)) {
+				  return true;
+			  }
+			  return false;
+		  }
+		  //tes
+		  
+		  public double winterPrice(int quantity) {
+			  return quantity * winterRate + winterServiceCharge;
+		  }
+		  
+		  public double summerPrice(int quantity) {
+			  return quantity * summerRate;
+		  }
+		  
 		  // TODO: change the conditional logic in this method using
 		  //       decompose conditional
 		  public double getTicketPrice(Date date, int quantity) {
 		    double charge;
-		    if (date.before(SUMMER_START) || date.after(SUMMER_END)) {
-		      charge = quantity * winterRate + winterServiceCharge;
+		    if (isWinter(date)) {
+		      return winterPrice(quantity);
 		    }
 		    else {
-		      charge = quantity * summerRate;
+		      return summerPrice(quantity);
 		    }
-		    return charge;
+		    
 		  }
 		}
 	public void test() {
